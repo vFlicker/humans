@@ -16,6 +16,6 @@ git init
 git checkout -B main
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:vFlicker/humans.gitt main:gh-pages
+git push -f git@github.com:vFlicker/humans.git main:gh-pages
 
 cd -
