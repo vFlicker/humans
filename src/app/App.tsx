@@ -1,13 +1,11 @@
 import './styles/index.css';
 
 import { Button } from '~/components/Button';
-import { Title } from '~/components/Title';
 
 export function App(): JSX.Element {
   return (
     <div>
-      <Title />
-      <Button>Продолжить</Button>
+      <Button iconName="arrows">Продолжить</Button>
     </div>
   );
 }
