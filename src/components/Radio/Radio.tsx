@@ -3,10 +3,19 @@ import { ComponentPropsWithoutRef } from 'react';
 
 import classes from './Radio.module.css';
 
-type RadioProps = ComponentPropsWithoutRef<'input'>;
+type RadioProps = ComponentPropsWithoutRef<'input'> & {
+  wrapped?: boolean;
+};
 
-export function Radio({ className, children, ...props }: RadioProps) {
-  const classNames = cn(classes.radio, className);
+export function Radio({
+  className,
+  wrapped = false,
+  children,
+  ...props
+}: RadioProps) {
+  const classNames = cn(classes.radio, className, {
+    [classes.wrapper]: wrapped,
+  });
 
   return (
     <label className={classNames}>

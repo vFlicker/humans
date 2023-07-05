@@ -1,7 +1,7 @@
 .radio {
   position: relative;
 
-  display: flex;
+  display: inline-flex;
   align-items: center;
 
   -webkit-user-select: none;
@@ -27,6 +27,8 @@
   height: 24px;
   border: 1px solid #E9E9E9;
   border-radius: 50%;
+
+  background-color: #ffffff;
 }
 
 .box::after {
@@ -44,9 +46,14 @@
   background-color: #E9E9E9;
 }
 
+.text {
+  margin-left: 8px;
+  color: #7D7D7D;
+}
+
+
 .input:checked + .box {
   border-color: #277156;
-  background-color: #ffffff;
   background-image: url(../images/tick.svg);
   background-position: center;
 }
@@ -55,18 +62,35 @@
   background-color: #277156;
 }
 
+.input:checked ~ .text {
+  color: #000000;
+}
+
 .radio:hover .box,
-.input:focus + .box,
-.input:checked:focus + .box {
+.input:focus + .box {
   border-color: #5aaf90;
 }
 
 .radio:hover .box:after,
-.input:focus + .box:after,
-.input:checked:focus + .box:after {
+.input:focus + .box:after {
   background-color: #5aaf90;
 }
 
-.text {
-  margin-left: 8px;
+/* Wrapper */
+
+.wrapper {
+  padding: 5px 16px 5px 5px;
+  border: 1px solid #f6f3f3;
+  border-radius: 40px;
+
+  background-color: #f6f3f3;
+}
+
+.wrapper:hover,
+.wrapper:focus-within {
+  border-color: #5aaf90;
+}
+
+.wrapper.checked {
+  border: 1px solid #277156;
 }
