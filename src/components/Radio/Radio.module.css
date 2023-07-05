@@ -9,6 +9,10 @@
   cursor: pointer;
 }
 
+.radio.checked {
+  border-color: #277156;
+}
+
 .input {
   -webkit-appearance: none;
   appearance: none;
@@ -50,7 +54,6 @@
   margin-left: 8px;
   color: #7D7D7D;
 }
-
 
 .input:checked + .box {
   border-color: #277156;
