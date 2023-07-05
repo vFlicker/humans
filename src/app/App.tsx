@@ -1,6 +1,7 @@
 import './styles/index.css';
 
 import { Button } from '~/components/Button';
+import { Checkbox } from '~/components/Checkbox';
 import { Markup } from '~/components/Markup';
 import { Radio } from '~/components/Radio';
 
@@ -11,6 +12,11 @@ export function App(): JSX.Element {
   return (
     <div>
       <Button iconName="arrows">Продолжить</Button>
+
+      <section>
+        <Checkbox>Частями</Checkbox>
+        <Checkbox>Счет на ИП / ООО</Checkbox>
+      </section>
 
       <section>
         <Radio name="payment method" value="card" wrapped checked>
