@@ -5,6 +5,7 @@ import { Checkbox } from '~/components/Checkbox';
 import { Input } from '~/components/Input';
 import { Markup } from '~/components/Markup';
 import { Radio } from '~/components/Radio';
+import { Toggler } from '~/components/Toggler';
 
 import imageMarkup1Src from '../shared/images/markup/markup_1.jpg';
 import imageMarkup2Src from '../shared/images/markup/markup_2.jpg';
@@ -14,6 +15,8 @@ export function App(): JSX.Element {
   return (
     <>
       <Button iconName="arrows">Продолжить</Button>
+
+      <Toggler />
 
       <section>
         <Checkbox>Частями</Checkbox>
