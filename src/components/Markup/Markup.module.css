@@ -10,6 +10,10 @@
   cursor: pointer;
 }
 
+.markup.disabled {
+  opacity: 0.4;
+}
+
 .image {
   width: 220px;
   margin-bottom: 16px;

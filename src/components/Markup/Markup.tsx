@@ -14,11 +14,14 @@ export function Markup({
   src,
   alt,
   className,
+  disabled,
   selected = false,
   children,
 }: MarkupProps): JSX.Element {
   const classNames = cn(classes.markup, radioClasses.radio, className, {
     [radioClasses.checked]: selected,
+    [classes.disabled]: disabled,
+    [radioClasses.disabled]: disabled,
   });
 
   return (
@@ -28,7 +31,12 @@ export function Markup({
       <span className={classes.footer}>
         <span className={classes.title}>{children}</span>
 
-        <input type="radio" className={radioClasses.input} checked={selected} />
+        <input
+          type="radio"
+          className={radioClasses.input}
+          checked={selected}
+          disabled={disabled}
+        />
         <span className={radioClasses.box}></span>
       </span>
     </label>

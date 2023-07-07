@@ -10,12 +10,14 @@ type RadioProps = ComponentPropsWithoutRef<'input'> & {
 export function Radio({
   className,
   checked,
+  disabled,
   wrapped = false,
   children,
   ...props
 }: RadioProps) {
   const classNames = cn(classes.radio, className, {
     [classes.checked]: checked,
+    [classes.disabled]: disabled,
     [classes.wrapper]: wrapped,
   });
 
@@ -25,6 +27,7 @@ export function Radio({
         type="radio"
         className={classes.input}
         checked={checked}
+        disabled={disabled}
         {...props}
       />
       <span className={classes.box}></span>

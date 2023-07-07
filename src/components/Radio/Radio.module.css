@@ -13,6 +13,10 @@
   border-color: #277156;
 }
 
+.radio.disabled {
+  cursor: not-allowed;
+}
+
 .input {
   -webkit-appearance: none;
   appearance: none;
@@ -69,12 +73,12 @@
   color: #000000;
 }
 
-.radio:hover .box,
+.radio:not(.disabled):hover .box,
 .input:focus + .box {
   border-color: #5aaf90;
 }
 
-.radio:hover .box:after,
+.radio:not(.disabled):hover .box:after,
 .input:focus + .box:after {
   background-color: #5aaf90;
 }
@@ -89,7 +93,7 @@
   background-color: #f6f3f3;
 }
 
-.wrapper:hover,
+.wrapper:not(.disabled):hover,
 .wrapper:focus-within {
   border-color: #5aaf90;
 }

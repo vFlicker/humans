@@ -7,6 +7,7 @@ import { Radio } from '~/components/Radio';
 
 import imageMarkup1Src from '../shared/images/markup/markup_1.jpg';
 import imageMarkup2Src from '../shared/images/markup/markup_2.jpg';
+import imageMarkup3Src from '../shared/images/markup/markup_3.jpg';
 
 export function App(): JSX.Element {
   return (
@@ -26,6 +27,10 @@ export function App(): JSX.Element {
         <Radio name="payment method" value="parts" wrapped>
           Частями
         </Radio>
+
+        <Radio name="payment method" value="parts" wrapped disabled>
+          Other
+        </Radio>
       </section>
 
       <section>
@@ -35,6 +40,10 @@ export function App(): JSX.Element {
 
         <Markup src={imageMarkup2Src} alt="Макет 2">
           Макет #2
+        </Markup>
+
+        <Markup src={imageMarkup3Src} alt="Макет 2" disabled>
+          Макет #3
         </Markup>
       </section>
     </div>
