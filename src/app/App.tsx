@@ -2,6 +2,7 @@ import './styles/index.css';
 
 import { Button } from '~/components/Button';
 import { Checkbox } from '~/components/Checkbox';
+import { Input } from '~/components/Input';
 import { Markup } from '~/components/Markup';
 import { Radio } from '~/components/Radio';
 
@@ -11,12 +12,36 @@ import imageMarkup3Src from '../shared/images/markup/markup_3.jpg';
 
 export function App(): JSX.Element {
   return (
-    <div>
+    <>
       <Button iconName="arrows">Продолжить</Button>
 
       <section>
         <Checkbox>Частями</Checkbox>
         <Checkbox>Счет на ИП / ООО</Checkbox>
+      </section>
+
+      <section>
+        <Input
+          icon="target"
+          name="logotype"
+          label="Селектор контейнера"
+          placeholder=".new-container"
+        />
+
+        <Input
+          accent
+          icon="link"
+          name="logotype"
+          label="Ссылка на логотип"
+          placeholder="из файлового хранилища"
+        />
+
+        <Input
+          icon="edit"
+          name="logotype"
+          label="Текст с офертой под блоком"
+          placeholder="до 225 символов"
+        />
       </section>
 
       <section>
@@ -46,6 +71,6 @@ export function App(): JSX.Element {
           Макет #3
         </Markup>
       </section>
-    </div>
+    </>
   );
 }
