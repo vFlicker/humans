@@ -36,10 +36,10 @@
 }
 
 .button.arrows::after {
-  background-image: url(../../shared/images/arrows.svg);
+  background-image: url(../../shared/images/arrows-icon.svg);
 }
 
 
 .button.plus::after {
-  background-image: url(../../shared/images/plus.svg);
+  background-image: url(../../shared/images/plus-icon.svg);
 }

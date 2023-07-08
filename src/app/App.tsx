@@ -1,6 +1,7 @@
 import './styles/index.css';
 
 import { Button } from '~/components/Button';
+import { CalenderInput } from '~/components/CalenderInput';
 import { Checkbox } from '~/components/Checkbox';
 import { Input } from '~/components/Input';
 import { Markup } from '~/components/Markup';
@@ -17,9 +18,9 @@ export function App(): JSX.Element {
     <>
       <Button iconName="arrows">Продолжить</Button>
 
-      <Scanner />
+      <CalenderInput />
 
-      <Toggler />
+      <Scanner />
 
       <section>
         <Checkbox>Частями</Checkbox>
@@ -49,6 +50,8 @@ export function App(): JSX.Element {
           placeholder="до 225 символов"
         />
       </section>
+
+      <Toggler />
 
       <section>
         <Radio name="payment method" value="card" wrapped checked>
