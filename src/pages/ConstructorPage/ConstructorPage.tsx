@@ -1,11 +1,11 @@
 import { Button } from '~/components/Button';
 import { Markup } from '~/components/Markup';
 
-import { config } from './config';
+import { markups } from './config';
 import classes from './ConstructorPage.module.css';
 
 export function ConstructorPage(): JSX.Element {
-  const markupList = config.map(({ id, title, ...props }) => (
+  const markupList = markups.map(({ id, title, ...props }) => (
     <li key={id} className={classes.item}>
       <Markup {...props}>{title}</Markup>
     </li>
@@ -13,7 +13,7 @@ export function ConstructorPage(): JSX.Element {
 
   return (
     <main>
-      <h1 className={classes.title}>Конструктор страницы оплаты</h1>
+      <h1 className={classes.h1}>Конструктор страницы оплаты</h1>
 
       <ul className={classes.list}>{markupList}</ul>
 

@@ -4,16 +4,7 @@ import imageMarkup3Src from '~/shared/images/markup/markup_3.jpg';
 import imageMarkup4Src from '~/shared/images/markup/markup_4.jpg';
 import imageMarkup5Src from '~/shared/images/markup/markup_5.jpg';
 
-type Config = {
-  id: number;
-  src: string;
-  title: string;
-  alt: string;
-  disabled: boolean;
-  selected: boolean;
-}[];
-
-export const config: Config = [
+export const markups = [
   {
     id: 1,
     src: imageMarkup1Src,
@@ -54,4 +45,4 @@ export const config: Config = [
     disabled: true,
     selected: false,
   },
-];
+] as const;
