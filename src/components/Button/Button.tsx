@@ -4,7 +4,7 @@ import { ComponentPropsWithoutRef } from 'react';
 import classes from './Button.module.css';
 
 type ButtonProps = ComponentPropsWithoutRef<'button'> & {
-  iconName?: 'plus' | 'arrows';
+  iconName?: 'plus' | 'arrow';
 };
 
 export function Button({
