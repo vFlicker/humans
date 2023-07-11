@@ -2,6 +2,7 @@ import './styles/index.css';
 
 import { Header } from '~/components/Header';
 import { ConstructorPage } from '~/pages/ConstructorPage';
+import { DowlandPage } from '~/pages/DowlandPage';
 import { PayMethodsPage } from '~/pages/PayMethodsPage';
 import { SettingsPage } from '~/pages/SettingsPage';
 import { VariablesPage } from '~/pages/VariablesPage';
@@ -17,7 +18,8 @@ export function App(): JSX.Element {
         {/* <ConstructorPage /> */}
         {/* <SettingsPage /> */}
         {/* <PayMethodsPage /> */}
-        <VariablesPage />
+        {/* <VariablesPage /> */}
+        <DowlandPage />
       </main>
     </div>
   );
