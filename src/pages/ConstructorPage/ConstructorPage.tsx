@@ -12,7 +12,7 @@ export function ConstructorPage(): JSX.Element {
   ));
 
   return (
-    <main>
+    <>
       <h1 className={classes.h1}>Конструктор страницы оплаты</h1>
 
       <ul className={classes.list}>{markupList}</ul>
@@ -20,6 +20,6 @@ export function ConstructorPage(): JSX.Element {
       <Button className={classes.button} iconName="arrow">
         Продолжить
       </Button>
-    </main>
+    </>
   );
 }

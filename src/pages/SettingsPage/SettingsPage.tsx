@@ -21,7 +21,7 @@ export function SettingsPage(): JSX.Element {
   ));
 
   return (
-    <main>
+    <>
       <h1 className={classes.h1}>Основные настройки</h1>
 
       <div className={cn(classes.from, classes.baseForm)}>
@@ -39,6 +39,6 @@ export function SettingsPage(): JSX.Element {
       <Button className={classes.button} iconName="arrow">
         Продолжить
       </Button>
-    </main>
+    </>
   );
 }

@@ -5,7 +5,7 @@ import classes from './PayMethodsPage.module.css';
 
 export function PayMethodsPage(): JSX.Element {
   return (
-    <main className={classes.main}>
+    <>
       <h1 className={classes.h1}>Методы оплаты</h1>
 
       <p className={classes.subtitle}>
@@ -20,6 +20,6 @@ export function PayMethodsPage(): JSX.Element {
         автоматического переноса способов оплаты все стили на странице должны
         быть удалены.
       </p>
-    </main>
+    </>
   );
 }
